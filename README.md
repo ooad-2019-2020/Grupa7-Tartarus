@@ -63,7 +63,7 @@ Upravnik je u stanju da unese nove zatvorenike u sistem
 ### Ažuriranje zatvorenika:
 Upravnik je u stanju da u potpunosti ažurira podatke vezane za zatvorenika dok cu čuvari u mogućnosti da ostavljaju komentare na njihove profile
 
-### Ažuriranje specifikacija kazneno-upravnog zavoda:
+### Ažuriranje specifikacija kazneno-popravnog zavoda:
 Upravnik ima sposobnost da ažurira specifikacije kazneno-popravnog zavoda kao što je kapacitet broja zatvorenika
 
 ## Akteri
