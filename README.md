@@ -23,7 +23,7 @@ Upravljanje kazneno-popravnog zavoda je obimna odgovornost koja se sastoji od mn
 
 •	Mogućnost unosa i ažuriranja profila zatvorenika
 
-•	Prikaz i ažuriranje specifikacija kazneno-upravnog zavoda
+•	Prikaz i ažuriranje specifikacija kazneno-popravnog zavoda
 
 ## Procesi
 
