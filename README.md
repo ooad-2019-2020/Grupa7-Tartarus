@@ -23,40 +23,40 @@ Upravljanje kazneno-popravnog zavoda je obimna odgovornost koja se sastoji od mn
 ### Kreacija korisničkog računa:
 Čuvari kao i lica sa suda koja započinju radni odnos kreiraju sebi račun, a upravnik ih odobrava
 
-# Ažuriranje korisničkog računa:
+### Ažuriranje korisničkog računa:
 Upravnik je u stanju da svim korisnicima u određenoj mjeri ažurira korisnički račun, dok svi korisnici mogu ažurirati svoj korisnički račun
 
-# Brisanje korisničkog računa:
+### Brisanje korisničkog računa:
 Upravnik je u stanju da svim korisnicima obriše korisnički račun, dok svi korisnici mogu sami svoj korisnički račun da obrišu
 
-# Generisanje koda za otvaranje novog korisničkog računa:
+### Generisanje koda za otvaranje novog korisničkog računa:
 Nakon potvrde zahtjeva za kreaciju korisničkog računa od strane upravnika, kod se generiše i šalje neregistrovanom korisniku, omogućavajući  mu kreaciju korisničkog računa
 
-# Kreacija zahtjeva:
+### Kreacija zahtjeva:
 Korisnici (upravnik, čuvar, sud) kao i gosti imaju mogućnost kreacije zahtjeva
 
-# Slanje zahtjeva:
+### Slanje zahtjeva:
 Upravnik ima mogućnost da sudu šalje zahtjeve, dok sud, čuvari i gosti imaju mogućnost da upravniku šalju zahtjeve
 
-# Procesiranje zahtjeva:
+### Procesiranje zahtjeva:
 Korisnik koji je primio zahtjev ima mogućnost da ga odobri ili odbije uz mogućnost da napiše komentar vezan za svoju odluku
 
-# Komunikacija između korisnika:
+### Komunikacija između korisnika:
 Korisnici su u stanju da jedan drugom šalju poruke u zavisnosti od toga koji je nivo pristupa njihovog korisničkog računa; tako da upravnik može komunicirati sa sudom i čuvarima dok sud može komunicirati samo sa upravnikom, a čuvari mogu komunicirati između sebe kao i sa upravnikom
 
-# Postavljanje obavijesti:
+### Postavljanje obavijesti:
 Upravnik je u mogućnosti da kreira obavijesti koje će se u datom trenutku prikazati određenim korisnicima
 
-# Pretraživanje:
+### Pretraživanje:
 Dok je upravnik u mogućnosti da pretražuje sve zatvorenike po određenim kriterijima kao i korisnike aplikacije, drugi korisnici mogu pretraživati samo u zavisnosti od nivoa pristupa njihovog korisničkog računa; tako da osobe iz suda mogu jedno i drugo pretraživati kao i zatvorenike iz bloka kojem imaju pristup
 
-# Unos zatvorenika:
+### Unos zatvorenika:
 Upravnik je u stanju da unese nove zatvorenike u sistem
 
-# Ažuriranje zatvorenika:
+### Ažuriranje zatvorenika:
 Upravnik je u stanju da u potpunosti ažurira podatke vezane za zatvorenika dok cu čuvari u mogućnosti da ostavljaju komentare na njihove profile
 
-# Ažuriranje specifikacija kazneno-upravnog zavoda:
+### Ažuriranje specifikacija kazneno-upravnog zavoda:
 Upravnik ima sposobnost da ažurira specifikacije kazneno-upravnog zavoda kao što je kapacitet kazneno-upravnog zavoda u smislu po broju zatvorenika
 
 ## Akteri
