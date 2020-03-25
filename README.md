@@ -14,10 +14,15 @@ Upravljanje kazneno-popravnog zavoda je obimna odgovornost koja se sastoji od mn
 •	Potreba i mogućnost da se generiše kod kako bi se novi korisnički račun otvorio
 
 •	Kreacija, slanje i procesiranja zahtjeva
+
 •	Komunikacija između korisnika u zavisnosti od nivoa pristupa korisničkog računa
+
 •	Mogućnost postavljanja obavijesti koje su vidjljive samo određenim korisnicima
+
 •	Mogućnost pretrage zatvorenika, kao i drugih korisnika
+
 •	Mogućnost unosa i ažuriranja profila zatvorenika
+
 •	Prikaz i ažuriranje specifikacija kazneno-upravnog zavoda
 
 ## Procesi
@@ -64,7 +69,10 @@ Upravnik ima sposobnost da ažurira specifikacije kazneno-upravnog zavoda kao š
 ## Akteri
 
 •	Upravnik - Osoba zadužena za funkcionisanje čitavog kazneno-popravnog zavoda
+
 •	Čuvar - Osoba zadužena za održavanje mira i sprovođenje sigurnosnih mjera u kazneno-popravnom zavodu
+
 •	Sud - Osoba koja predstavlja interes suda ili sudskog procesa
+
 •	Neregistrovani korisnik (Gost) - Osoba koja još nema registrovan račun na aplikaciji
 
