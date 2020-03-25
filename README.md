@@ -10,7 +10,9 @@ Upravljanje kazneno-popravnog zavoda je obimna odgovornost koja se sastoji od mn
 
 ## Funkcionalnosti
 •	Kreacija, ažuriranje i brisanje korisničkog računa
+
 •	Potreba i mogućnost da se generiše kod kako bi se novi korisnički račun otvorio
+
 •	Kreacija, slanje i procesiranja zahtjeva
 •	Komunikacija između korisnika u zavisnosti od nivoa pristupa korisničkog računa
 •	Mogućnost postavljanja obavijesti koje su vidjljive samo određenim korisnicima
