@@ -5,7 +5,12 @@ using System.Threading.Tasks;
 
 namespace Tartarus.Models
 {
-    public class Class
+    public class Zatvor
     {
+        private int kapacitetZatvorenika;
+        private double trosakPoZatvoreniku;
+        private List<Zatvorenik> zatvorenici;
+        private List<Cuvar> cuvari;
+        private Upravnik upravnik;
     }
 }

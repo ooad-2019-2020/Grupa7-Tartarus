@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Le8wNYN+DkQe1E2dLs87vurcGtEcfT2i+sYn3sYWaiaiwkuVPosdN7CmhM1HE5EgJjKuuy5LIUIMpCL3RBZCZw==",
+  "dgSpecHash": "DgOAAZscUEpZSF9QEW1etRDrukOZ0glLVbPnsTUnEh6Hzn3yt1XVsLg4KkoSBV13VoMUJB/xhCWd044Pv5YPuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kerim\\source\\repos\\Tartarus\\Tartarus\\Tartarus.csproj",
+  "projectFilePath": "C:\\Repo\\Grupa7-Tartarus\\Tartarus\\Tartarus\\Tartarus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kerim\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\kerim\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

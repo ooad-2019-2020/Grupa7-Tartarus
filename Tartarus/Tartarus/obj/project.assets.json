@@ -6072,11 +6072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kerim\\source\\repos\\Tartarus\\Tartarus\\Tartarus.csproj",
+      "projectUniqueName": "C:\\Repo\\Grupa7-Tartarus\\Tartarus\\Tartarus\\Tartarus.csproj",
       "projectName": "Tartarus",
-      "projectPath": "C:\\Users\\kerim\\source\\repos\\Tartarus\\Tartarus\\Tartarus.csproj",
+      "projectPath": "C:\\Repo\\Grupa7-Tartarus\\Tartarus\\Tartarus\\Tartarus.csproj",
       "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kerim\\source\\repos\\Tartarus\\Tartarus\\obj\\",
+      "outputPath": "C:\\Repo\\Grupa7-Tartarus\\Tartarus\\Tartarus\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
