@@ -17,7 +17,7 @@ Upravljanje kazneno-popravnog zavoda je obimna odgovornost koja se sastoji od mn
 
 •	Komunikacija između korisnika u zavisnosti od nivoa pristupa korisničkog računa
 
-•	Mogućnost postavljanja obavijesti koje su vidjljive samo određenim korisnicima
+•	Mogućnost postavljanja obavijesti koje su vidljive samo određenim korisnicima
 
 •	Mogućnost pretrage zatvorenika, kao i drugih korisnika
 
