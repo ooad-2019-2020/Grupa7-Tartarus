@@ -55,7 +55,7 @@ Korisnici su u stanju da jedan drugom šalju poruke u zavisnosti od toga koji je
 Upravnik je u mogućnosti da kreira obavijesti koje će se u datom trenutku prikazati određenim korisnicima
 
 ### Pretraživanje:
-Dok je upravnik u mogućnosti da pretražuje sve zatvorenike po određenim kriterijima kao i korisnike aplikacije, drugi korisnici mogu pretraživati samo u zavisnosti od nivoa pristupa njihovog korisničkog računa; tako da osobe iz suda mogu jedno i drugo pretraživati kao i zatvorenike iz bloka kojem imaju pristup
+Korisnici su u mogućnosti da pretražuju druge korisnike, kao i zatvorenike, i to po različitim kriterijima kao što su username za korisnike, i lokacija u kazneno-popravnom zavodu za zatvorenike
 
 ### Unos zatvorenika:
 Upravnik je u stanju da unese nove zatvorenike u sistem
