@@ -43,7 +43,7 @@ Nakon potvrde zahtjeva za kreaciju korisničkog računa od strane upravnika, kod
 Korisnici (upravnik, čuvar, sud) kao i gosti imaju mogućnost kreacije zahtjeva
 
 ### Slanje zahtjeva:
-Upravnik ima mogućnost da sudu šalje zahtjeve, dok sud, čuvari i gosti imaju mogućnost da upravniku šalju zahtjeve
+Upravnik, sud i čuvari imaju mogućnost da si međusobno šalju zahtjeve, dok gosti imaju mogućnost samo da upravniku šalju zahtjeve
 
 ### Procesiranje zahtjeva:
 Korisnik koji je primio zahtjev ima mogućnost da ga odobri ili odbije uz mogućnost da napiše komentar vezan za svoju odluku
