@@ -43,13 +43,13 @@ Nakon potvrde zahtjeva za kreaciju korisničkog računa od strane upravnika, kod
 Korisnici (upravnik, čuvar, sud) kao i gosti imaju mogućnost kreacije zahtjeva
 
 ### Slanje zahtjeva:
-Upravnik, sud i čuvari imaju mogućnost da si međusobno šalju zahtjeve, dok gosti imaju mogućnost samo da upravniku šalju zahtjeve
+Upravnik može slati zahtjeve sudu i čuvarima. Sud može slati zahtjeve između sebe, kao i upravniku, dok čuvari također mogu slati zahtjeve između sebe, kao i upravniku. Gost može slati zahtjeve samo upravniku.
 
 ### Procesiranje zahtjeva:
 Korisnik koji je primio zahtjev ima mogućnost da ga odobri ili odbije uz mogućnost da napiše komentar vezan za svoju odluku
 
 ### Komunikacija između korisnika:
-Korisnici su u stanju da jedan drugom šalju poruke u zavisnosti od toga koji je nivo pristupa njihovog korisničkog računa; tako da upravnik može komunicirati sa sudom i čuvarima dok sud može komunicirati samo sa upravnikom, a čuvari mogu komunicirati između sebe kao i sa upravnikom
+Korisnici su u stanju da jedan drugom šalju poruke u zavisnosti od toga koji je nivo pristupa njihovog korisničkog računa; tako da upravnik može komunicirati sa sudom i čuvarima. Sud može komunicirati između sebe kao i sa upravnikom, dok čuvari također mogu komunicirati između sebe kao i sa upravnikom
 
 ### Postavljanje obavijesti:
 Upravnik je u mogućnosti da kreira obavijesti koje će se prikazati određenim korisnicima
