@@ -13,7 +13,7 @@ Upravljanje kazneno-popravnog zavoda je obimna odgovornost koja se sastoji od mn
 
 •	Potreba i mogućnost da se generiše kod kako bi se novi korisnički račun otvorio
 
-•	Kreacija, slanje i procesiranja zahtjeva
+•	Kreacija, slanje i procesiranje zahtjeva
 
 •	Komunikacija između korisnika u zavisnosti od nivoa pristupa korisničkog računa
 
