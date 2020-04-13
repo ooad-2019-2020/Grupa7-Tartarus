@@ -52,7 +52,7 @@ Korisnik koji je primio zahtjev ima mogućnost da ga odobri ili odbije uz moguć
 Korisnici su u stanju da jedan drugom šalju poruke u zavisnosti od toga koji je nivo pristupa njihovog korisničkog računa; tako da upravnik može komunicirati sa sudom i čuvarima dok sud može komunicirati samo sa upravnikom, a čuvari mogu komunicirati između sebe kao i sa upravnikom
 
 ### Postavljanje obavijesti:
-Upravnik je u mogućnosti da kreira obavijesti koje će se u datom trenutku prikazati određenim korisnicima
+Upravnik je u mogućnosti da kreira obavijesti koje će se prikazati određenim korisnicima
 
 ### Pretraživanje:
 Korisnici su u mogućnosti da pretražuju druge korisnike, kao i zatvorenike, i to po različitim kriterijima kao što su username za korisnike, i lokacija u kazneno-popravnom zavodu za zatvorenike
