@@ -7,10 +7,10 @@ namespace Tartarus.Models
 {
     public class Zatvor
     {
-        private int kapacitetZatvorenika;
-        private double trosakPoZatvoreniku;
-        private List<Zatvorenik> zatvorenici;
-        private List<Cuvar> cuvari;
-        private Upravnik upravnik;
+        private int kapacitetZatvorenika { get; set; }
+        private double trosakPoZatvoreniku { get; set; }
+        private List<Zatvorenik> zatvorenici { get; set; }
+        private List<Cuvar> cuvari { get; set; }
+        private Upravnik upravnik { get; set; }
     }
 }

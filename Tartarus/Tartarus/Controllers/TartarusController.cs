@@ -1,10 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System.Text.Encodings.Web;
 
 namespace Tartarus.Controllers
 {
     public class TartarusController : Controller
     {
+        public readonly ILogger<TartarusController> _logger;
+
+        public TartarusController(ILogger<TartarusController> logger)
+        {
+            _logger = logger;
+        }
         public IActionResult Index()
         {
             return View();
@@ -17,5 +24,6 @@ namespace Tartarus.Controllers
 
             return View();
         }
+       
     }
 }
