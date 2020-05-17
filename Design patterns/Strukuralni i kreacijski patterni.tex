@@ -1,0 +1,181 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{lmodern}
+\usepackage[croatian]{babel}
+\usepackage[margin=1.4in]{geometry}
+\usepackage[labelsep=period]{caption}
+\usepackage{graphicx}
+\usepackage{mathastext}
+\usepackage{textcomp}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{afterpage}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{epstopdf}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{algorithm}  
+\usepackage{algorithmic}
+\usepackage{color, colortbl}
+\usetikzlibrary{trees}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage[titletoc,page]{appendix}
+\usepackage[up,bf,raggedright]{titlesec}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{adjustbox}
+\usepackage[font=scriptsize]{caption}
+\addto\captionscroatian{%
+	\def\refname{Reference}%
+	\def\bibname{Reference}%
+	\def\tablename{Tabela}%
+}%
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+	backgroundcolor=\color{white},   
+	basicstyle=\ttfamily\footnotesize,        
+	breakatwhitespace=false,        
+	breaklines=true,                
+	captionpos=b,                   
+	commentstyle=\color{mygreen},      
+	escapeinside={\%*}{*)},         
+	extendedchars=true,             
+	frame=single,	                   
+	keepspaces=true,                 
+	keywordstyle=\color{blue},       
+	language=Python,                 
+	numbers=left,                   
+	numbersep=5pt,                   
+	numberstyle=\tiny\color{mygray}, 
+	rulecolor=\color{black},        
+	showspaces=false,                
+	showstringspaces=false,         
+	showtabs=false,                  
+	stepnumber=1,                    
+	stringstyle=\color{mymauve},     
+	title=\lstname                   
+}
+
+\theoremstyle{definition}
+\newtheorem{mydef}{Definicija} [chapter]
+\newtheorem{myexp}{Primjer} [chapter]
+\newtheorem{myteo}{Teorem} [chapter]
+\newtheorem{mypro}{Dokaz} [chapter]
+\makeatletter
+\newcommand{\newalgname}[1]{%
+	\renewcommand{\ALG@name}{#1}%
+}
+
+\renewcommand{\tablename}{Tabela}
+\newalgname{Algoritam}
+\renewcommand{\listalgorithmname}{Lista\ALG@name s}
+\makeatother
+
+\begin{document}
+	\begin{titlepage}
+		\newcommand{\HRule}{\rule{\linewidth}{1mm}} 
+		\noindent
+		{\large
+			
+			
+			
+			\begin{center}
+				\LARGE 
+				\bfseries 
+				Strukuralni i kreacijski patterni \\
+			
+				
+				\large 
+			Predmet: Objektno orijentisana analiza i dizajn
+				\\[6.0 cm] 
+			\end{center}	 		
+			
+
+			\begin{minipage}{0.9\textwidth}
+				\begin{flushright}
+					\textbf{Grupa: Tartarus}  \\
+					\textbf{Hadžić Ajdin}  \\	
+					\textbf{Halilović Kemal}  \\
+					\textbf{Mehmedović Faris} \\
+				\end{flushright}
+			\end{minipage}\\[1 cm]
+		}
+	\end{titlepage}
+\section *{Strukuralni patterni}
+\begin{enumerate}
+
+  \item  \large Adapter pattern \newline
+  \normalsize
+  Osnovna  namjena  Adapter  paterna  je  da omogući  širu  upotrebu  već postojećih  klasa.  U situacijama kada je potreban drugačiji interfejs već postojeće klase, a ne želimo mijenjati postojeću klasu koristi se Adapter patern. Adapter patern kreira novu adapter klasu koja služi kao posrednik izmedu orginalne klase i željenog interfejsa. Primjer Adapter paterna se proicira unutar Gostklase  koja  omogućava  da  dva  interfejsa  (sa  naizgleda  različitim  pravcima) funkcionišu zajedno. Klasa Gost implementira svaku metodu interfejsa IPretragaZatvorenika i kreacijaKorisnika
+  \begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img1.png}
+\caption{Primjer Adapter pattern primjenjen na class diagramu Tartarus aplikacije}
+\end{figure}
+  \item \large Facade pattern \newline
+  \normalsize
+  Ovaj  patern  se  korisiti  s  ciljem  da  osigura  više  pogleda  visokog  nivoa  na  podsisteme (implementacija   podsistema   skrivena   od korisnika).   Namjena   facade  paterna  se  može prepozanti unutar klase Zatvor, pomoću koje se pristupa upravniku, sektorima i obavijestima na  nivu  kazneno-popravnog zavoda. Patern je izveden tako što je klasa Zatvorpovezana  sa klasama Upravniki Sektor, kao iinterfejsom ZatvorBP. 
+    \begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img2.png}
+\caption{Primjer Facade pattern primjenjen na class diagramu Tartarus aplikacije}
+\end{figure}
+   \item \large Decorator pattern \newline
+  \normalsize
+  Osnovna namjena Decorator paterna je da omogući dinamičko dodavanje novih elemenata i ponašanja (funkcionalnosti) postojećim objektima. Objekat pri tome ne zna da je urađena dekoracija što je veoma korisno za ponovnu upotrebu komponenti softverskog sistema.  U našem  sistemu  konkretno  ne  možemo  navesti  primjer  ovog  paterna.  Nakon  razmatranja, primjetli smo da bismo ovaj patern mogli primjeniti na klasu Pravnik. Shodno tome da  različite profesije pravnika imaju drugačije uloge, korištenjem dekoracijskog paterna,  omogućene bi bile različite uloge, čime bi se postigao viši nivo relevantnosti unutar rada Sistema. 
+    \item \large Bridge pattern \newline
+  \normalsize
+  Osnovna namjena Bridge paterna je da omogući odvajanje apstrakcije i implementacije neke klase  tako  da  ta  klasa  može  posjedovati  više  različitih  apstrakcija  i  više  različitih implementacija  za  pojedine  apstrakcije.  U  našem  sistemu  konkretno  ne  možemo  navesti primjer  ovog  paterna,  međutim  brigde  patern  može  se  iskoristiti  nad  klasama Pravnik, Upravnik (ukoliko bismo ih povezali sa intefejsom posaljiObavijest). Također trebamo dodati novu klasu Bridge, koja će sadržavati apstrakciju i kojoj će Zatvor jedino imati pristup
+     \item \large Composite pattern \newline
+  \normalsize
+  Composite patern služi za kreiranje hijerarhije objekata. Koristi se kada svi objekti imaju različite implementacije nekih metoda, no potrebno im je svima pristupati na isti način, te se na taj način pojednostavljuje njihova implementacija. Primjena  ovog  paterna  unutar  sistema nije moguća, jer odstupa od generalnog uzorka po kojem bi trebala funkcionisati aplikacija
+     \item \large Proxy pattern \newline
+  \normalsize
+  Proxy patern služi za dodatno osiguravanje objekata od pogrešne ili zlonamjerne upotrebe. Primjenom  ovog  paterna  omogućava  se  kontrola  pristupa  objektima,  te  se  onemogućava manipulacija objektima ukoliko neki uslov nije ispunjen, odnosno ukoliko korisnik nema prava pristupa traženom objektu. U našem sistemu konkretno ne možemo navesti primjer ovog paterna,  međutim  možemo  implementirati  patern  nad  klasama Pravnik, Upravnik kao  i intefejsom posaljiObavijest.  Najprije definšemo klasu Proxy koja će implementirati metodu pristup() u okviru koje će biti izvršena autentifikacija, te koja će naslijediti interfejs Obavijest i njegove metode. 
+   \item \large Flyweight pattern \newline
+  \normalsize
+  Flyweight patern  koristi  se  kako  bi  se  onemogućilo  bespotrebno  stvaranje  velikog  broja instanci objekata koji sviu suštini predstavljaju jedan objekat. Samo ukoliko postoji potreba za kreiranjem specifičnog objekta sa jedinstvenim karakteristikama (tzv. specifično stanje), vrši se njegova instantacija, dok se u svim ostalim slučajevima koristi postojeća opća instance objekta (tzv. bezlično stanje). Primjena ovog paterna unutar sistema nije moguća, jer odstupa od generalnog uzorka po kojem bi trebala funkcionisati aplikacija.
+\end{enumerate}
+\section *{Kreacijski patterni}
+\begin{enumerate}
+
+  \item  \large Singleton pattern \newline
+  \normalsize
+  Singleton patern služi kako bi se neka klasa mogla instancirati samo jednom. Na ovaj način može se omogućiti i tzv. lazy initialization, odnosno instantacija klase tek onda kada se to prvi put traži. Osim toga, osigurava se i globalni pristup jedinstvenoj instanci -svaki put kada joj se pokuša pristupiti, dobiti će se ista instanca klase. Ovo olakšava i kontrolu pristupa u slučaju kada je neophodno da postoji samo jedan objekat određenog tipa. Kako bi se osigurao singleton patern postoji samo jedna instanca upravnika kazneno-popravnog doma (klasa Upravnik).
+      \begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img3.png}
+\caption{Primjer Singleton pattern primjenjen na class diagramu Tartarus aplikacije}
+\end{figure}
+  \item \large Prototype pattern \newline
+  \normalsize
+  Uloga Prototype paterna je da kreira nove objekte klonirajući jednu od postojećih prototip instanci (postojeći objekat). Ako je trošak kreiranja novog objekta velik i kreiranje objekta je resursno zahtjevno tada se vrši kloniranje već postojećeg objekata. U našem sistemu možemo iskoristiti prototype pattern prilikom dodavanja novih zatvorenika, pri čemu trebamo definisati interfejsIPrototip koji  se  sastoji  od  metode kloniraj(). Također neophodno je Naslijediti interfejs IPrototipod  klase Zatvorenikte  implementirati  metodu kloniraj() koja će kreirati duboku kopiju objekta.
+   \item \large Factory Method pattern \newline
+  \normalsize
+  Uloga Factory Method paterna je da omogući kreiranje objekata na način da podklase odluče koju klasu instancirati. Različite podklase mogu na različite načine implementirati interfejs.Ovaj patern je implementiran preko klasa Upravnik, Pravnik i Čuvar (klase nasljeđuju klasu Korisnik).
+        \begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img4.png}
+\caption{Primjer Factory Method pattern primjenjen na class diagramu Tartarus aplikacije}
+\end{figure}
+    \item \large Abstract Factory Method pattern \newline
+  \normalsize
+  Abstract Factory patern omogućava da se kreiraju familije povezanih objekata/produkata. Na osnovu  apstraktne  familije produkata  kreiraju  se  konkretne  fabrike  (factories)  produkata različitih  tipova  i  različitih  kombinacija. Primjenu ovog  paterna  moguće je  zastupati  u određenom nivou konkretizacije nad klasama, jer odstupa od generalnog uzorka po kojem bi trebala funkcionisati aplikacija.
+     \item \large Builderpattern \newline
+  \normalsize
+  Uloga  Builder  paterna  je  odvajanje  specifikacije  kompleksnih  objekata  od  njihove  stvarnekonstrukcije. Isti konstrukcijski proces može kreirati različite reprezentacije.Primjena  ovog paterna evidentna je prilikom korištenja  interfejsa  na  dijagramu,  koji  su  vezani  sa  klasama unutar kojih se implementiraju.
+   \begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{img5.png}
+\caption{Primjer Builder pattern primjenjen na class diagramu Tartarus aplikacije}
+\end{figure}
+  \end{enumerate}
+\end{document}
