@@ -10,6 +10,8 @@ namespace Tartarus_final.Models
     {
         public int Id { get; set; }
         public String Tekst { get; set; }
+        public virtual ICollection<Obavijest> Obavijesti { get; set; }
+
         public Obavijest()
         {
             

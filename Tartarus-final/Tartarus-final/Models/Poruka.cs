@@ -12,6 +12,8 @@ namespace Tartarus_final.Models
         public String Tekst { get; set; }
         public String PrimalacEmail { get; set; }
         public String posiljalacEmail { get; set; }
+
+        public virtual ICollection<Poruka> Poruke { get; set; }
         public Poruka()
         {
 
