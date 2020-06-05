@@ -576,3 +576,4 @@ C:\Users\Ajdin.Ajdin-PC\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-fin
 C:\Users\Ajdin.Ajdin-PC\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.dll
 C:\Users\Ajdin.Ajdin-PC\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.pdb
 C:\Users\Ajdin.Ajdin-PC\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.genruntimeconfig.cache
+C:\Users\Ajdin.Ajdin-PC\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zahtjevi\Index.cshtml.g.cs
