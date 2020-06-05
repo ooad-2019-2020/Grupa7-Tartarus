@@ -9,6 +9,11 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<!--Dont spam divs(Look up semantic code)-->
+<form asp-action="PretražiZatvorenike" method="post" >
+    <input type="text" name="searchNames" />
+    <input type="submit" value="Submit" />
+</form>
 <table class="table">
     <thead>
         <tr>

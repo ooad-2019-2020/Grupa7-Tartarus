@@ -13,9 +13,12 @@ namespace Tartarus_final.Models
         {
 
         }
+
    
         public DbSet<Obavijest> Obavijest { get; set; }
         public DbSet<Poruka> Poruka { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Poruka>().ToTable("Poruke");

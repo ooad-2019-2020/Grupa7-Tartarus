@@ -7,10 +7,15 @@ namespace Tartarus_final.Models
 {
     public class Cuvar : Korisnik
     {
+
+        public string OwnerID { get; set; }
+
+       
         public Cuvar(int id,String i,String p,String em,String loz,DateTime dp) : base(id,i,p,em,loz,dp)
         {
 
         }
 
     }
+  
 }

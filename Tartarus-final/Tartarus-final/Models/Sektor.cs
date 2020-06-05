@@ -9,6 +9,7 @@ namespace Tartarus_final.Models
     {
         public String Naziv { get; set; }
         public Cuvar NadlezniCuvar { get; set; }
+
         public Sektor()
         {
 
