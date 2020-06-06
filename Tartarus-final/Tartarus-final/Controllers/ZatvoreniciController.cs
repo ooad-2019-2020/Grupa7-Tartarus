@@ -9,22 +9,27 @@ using Tartarus_final.Models;
 
 namespace Tartarus_final.Controllers
 {
-    public class ObavijestController : Controller
+    public class ZatvoreniciController : Controller
     {
         private readonly NasContext _context;
-        
-        public ObavijestController(NasContext context)
+
+        public ZatvoreniciController(NasContext context)
         {
             _context = context;
         }
 
-        // GET: Obavijest
-        public async Task<IActionResult> Index()
+        // GET: Zatvorenici
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Obavijest.ToListAsync());
+            var zatvorenici = from p in _context.Zatvorenik select p;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                zatvorenici = zatvorenici.Where(p => p.Ime.Contains(searchString));
+            }
+            return View(await zatvorenici.ToListAsync());
         }
 
-        // GET: Obavijest/Details/5
+        // GET: Zatvorenici/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,39 +37,39 @@ namespace Tartarus_final.Controllers
                 return NotFound();
             }
 
-            var obavijest = await _context.Obavijest
+            var zatvorenik = await _context.Zatvorenik
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (obavijest == null)
+            if (zatvorenik == null)
             {
                 return NotFound();
             }
 
-            return View(obavijest);
+            return View(zatvorenik);
         }
 
-        // GET: Obavijest/Create
+        // GET: Zatvorenici/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Obavijest/Create
+        // POST: Zatvorenici/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Tekst")] Obavijest obavijest)
+        public async Task<IActionResult> Create([Bind("ZatvorskaKazna,Evaluacija,Jmbg,Id,Ime,Prezime")] Zatvorenik zatvorenik)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(obavijest);
+                _context.Add(zatvorenik);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(obavijest);
+            return View(zatvorenik);
         }
 
-        // GET: Obavijest/Edit/5
+        // GET: Zatvorenici/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,22 +77,22 @@ namespace Tartarus_final.Controllers
                 return NotFound();
             }
 
-            var obavijest = await _context.Obavijest.FindAsync(id);
-            if (obavijest == null)
+            var zatvorenik = await _context.Zatvorenik.FindAsync(id);
+            if (zatvorenik == null)
             {
                 return NotFound();
             }
-            return View(obavijest);
+            return View(zatvorenik);
         }
 
-        // POST: Obavijest/Edit/5
+        // POST: Zatvorenici/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Tekst")] Obavijest obavijest)
+        public async Task<IActionResult> Edit(int id, [Bind("ZatvorskaKazna,Evaluacija,Jmbg,Id,Ime,Prezime")] Zatvorenik zatvorenik)
         {
-            if (id != obavijest.Id)
+            if (id != zatvorenik.Id)
             {
                 return NotFound();
             }
@@ -96,12 +101,12 @@ namespace Tartarus_final.Controllers
             {
                 try
                 {
-                    _context.Update(obavijest);
+                    _context.Update(zatvorenik);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ObavijestExists(obavijest.Id))
+                    if (!ZatvorenikExists(zatvorenik.Id))
                     {
                         return NotFound();
                     }
@@ -112,10 +117,10 @@ namespace Tartarus_final.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(obavijest);
+            return View(zatvorenik);
         }
 
-        // GET: Obavijest/Delete/5
+        // GET: Zatvorenici/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,30 +128,30 @@ namespace Tartarus_final.Controllers
                 return NotFound();
             }
 
-            var obavijest = await _context.Obavijest
+            var zatvorenik = await _context.Zatvorenik
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (obavijest == null)
+            if (zatvorenik == null)
             {
                 return NotFound();
             }
 
-            return View(obavijest);
+            return View(zatvorenik);
         }
 
-        // POST: Obavijest/Delete/5
+        // POST: Zatvorenici/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var obavijest = await _context.Obavijest.FindAsync(id);
-            _context.Obavijest.Remove(obavijest);
+            var zatvorenik = await _context.Zatvorenik.FindAsync(id);
+            _context.Zatvorenik.Remove(zatvorenik);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ObavijestExists(int id)
+        private bool ZatvorenikExists(int id)
         {
-            return _context.Obavijest.Any(e => e.Id == id);
+            return _context.Zatvorenik.Any(e => e.Id == id);
         }
     }
 }

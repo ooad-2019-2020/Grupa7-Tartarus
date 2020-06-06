@@ -333,7 +333,6 @@ C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\ru
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.csprojAssemblyReference.cache
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.RazorAssemblyInfo.cache
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.RazorAssemblyInfo.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.AssemblyInfoInputs.cache
@@ -373,8 +372,6 @@ C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\Sy
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.csproj.CoreCompileInputs.cache
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.MvcApplicationPartsAssemblyInfo.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.MvcApplicationPartsAssemblyInfo.cache
-C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\View.cshtml.g.cs
-C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\View1.cshtml.g.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
@@ -581,3 +578,8 @@ C:\Users\Ajdin.Ajdin-PC\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-fin
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Database\Index.cshtml.g.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Index.cshtml.g.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zahtjevi\Index.cshtml.g.cs
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\Create.cshtml.g.cs
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\Delete.cshtml.g.cs
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\Details.cshtml.g.cs
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\Edit.cshtml.g.cs
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\Index.cshtml.g.cs

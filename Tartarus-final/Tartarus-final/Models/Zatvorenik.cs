@@ -9,10 +9,12 @@ namespace Tartarus_final.Models
     {
        
         public Sektor sektor { get; set; }
+
         public int ZatvorskaKazna { get; set; }
         public List<Prekrsaj> Prekrsaji { get; set; }
         public String Evaluacija { get; set; }
         public int Jmbg { get; set; }
+
 
         public Zatvorenik()
         {
