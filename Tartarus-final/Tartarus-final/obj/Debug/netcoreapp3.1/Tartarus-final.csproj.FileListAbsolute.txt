@@ -782,3 +782,6 @@ C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartar
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.csproj.CopyComplete
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.dll
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.pdb
+C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Upravnik\Index.cshtml.g.cs
+C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Cuvar\Index.cshtml.g.cs
+C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Pravnik\Index.cshtml.g.cs
