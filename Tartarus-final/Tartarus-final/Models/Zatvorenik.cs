@@ -13,6 +13,11 @@ namespace Tartarus_final.Models
         public List<Prekrsaj> Prekrsaji { get; set; }
         public String Evaluacija { get; set; }
         public int Jmbg { get; set; }
+
+        public Zatvorenik()
+        {
+
+        }
         public Zatvorenik(int id,String i,String p, Sektor s,int zk,List<Prekrsaj> pk,String ev,int jm) : base(id, i, p)
         {
             sektor = s;

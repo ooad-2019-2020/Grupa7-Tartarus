@@ -7,6 +7,7 @@ namespace Tartarus_final.Models
 {
     public class Prekrsaj
     {
+        public int Id { get; set; }
         public String Zapisnik { get; set; }
         public String KaznenoDjelo { get; set; }
         public DateTime DatumPrekrsaja { get; set; }

@@ -12,6 +12,11 @@ namespace Tartarus_final.Models
         public int Id { get; set; }
         public String Ime { get; set; }
         public String Prezime { get; set; }
+
+        public Osoba()
+        {
+
+        }
         public Osoba(int id, String ime, String prezime)
         {
             Id = id;

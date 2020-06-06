@@ -7,7 +7,10 @@ namespace Tartarus_final.Models
 {
     public class Korisnik : Osoba
     {
-        
+        public Korisnik()
+        {
+
+        }
         public String Email { get; set; }
         public String Username { get; set; }
         public String Password { get; set; }
