@@ -751,7 +751,6 @@ C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartar
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Database\Index.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Obavijest\Create.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Obavijest\Delete.cshtml.g.cs
@@ -763,7 +762,6 @@ C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartar
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Poruka\Details.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Poruka\Edit.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Poruka\Index.cshtml.g.cs
-C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Profile\Index.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
