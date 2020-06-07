@@ -784,3 +784,4 @@ C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartar
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\AccontPages\_ViewImports.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\AccontPages\RegisterPages.cshtml.g.cs
 C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
