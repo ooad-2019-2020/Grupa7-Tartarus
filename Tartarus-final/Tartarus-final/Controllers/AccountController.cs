@@ -10,7 +10,7 @@ namespace Tartarus_final.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<IdentityUser> userManager;
+        private  UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
 
         public AccountController(UserManager<IdentityUser> userManager,
@@ -32,17 +32,32 @@ namespace Tartarus_final.Controllers
             return View();
         }
 
+
+     //   public IActionResult Login(string returnUrl)
+     //   {
+     //       return LocalRedirect(returnUrl);
+     //   }
+
         //upravlja kada se korisnik registruje (klikne dugme)
         [HttpPost]
-        public async Task<IActionResult> Login(Models.LoginViewModel model)
+        public async Task<IActionResult> Login(Models.LoginViewModel model, string returnUrl)
         {
             if (ModelState.IsValid)
             {
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
 
                 if (result.Succeeded)
-                { 
-                    return RedirectToAction("index", "home");
+                {
+
+                    if (!string.IsNullOrEmpty(returnUrl))
+                    {
+                        return LocalRedirect(returnUrl);
+                    }
+                    else
+                    {
+                      
+                        return RedirectToAction("index", "home");
+                    }
                 }
                     ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
             }

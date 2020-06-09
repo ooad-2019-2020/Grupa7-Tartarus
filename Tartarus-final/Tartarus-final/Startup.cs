@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tartarus_final.Models;
+using UE.Models.Authentication;
 
 namespace Tartarus_final
 {
@@ -34,14 +35,22 @@ namespace Tartarus_final
             services.AddDbContext<NasContext>(options =>
               options.UseSqlServer(
                   Configuration.GetConnectionString("DbConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddIdentity<IdentityUser, IdentityRole>(options => {
+                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                options.User.RequireUniqueEmail = false;
+                options.SignIn.RequireConfirmedAccount = true; })
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
 
+
             services.Configure<IdentityOptions>(options =>
             {
+                // User settings.
+                //  options.User.RequireUniqueEmail = true;
+                
+
                 // Password settings.
                 options.Password.RequireDigit = true;
                 options.Password.RequireLowercase = true;
@@ -54,11 +63,6 @@ namespace Tartarus_final
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
                 options.Lockout.MaxFailedAccessAttempts = 5;
                 options.Lockout.AllowedForNewUsers = true;
-
-                // User settings.
-                options.User.AllowedUserNameCharacters =
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
-                options.User.RequireUniqueEmail = false;
             });
         }
 
