@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <input type="button" value="Napravi obavijest" onclick="@("window.location.href='" + @Url.Action("Create", "Obavijest") + "'");" />
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+
+    <div class="bg">
+        <div class="content" style="align-items:center;"> 
+
+            <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2;">
+                <img src="~/img/Picture2.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text" style="align-content:safe center;"><button style="background-color: #000000; text-align: center;" type="submit" class="btn btn-primary">Access as warden</button></p>
+                </div>
+            </div>
+
+            <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2;">
+                <img src="img/Picture1.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text" style="align-content:center;"><button style="background-color: #000000; text-align: center;" type="submit"  class="btn btn-primary">Access as guard</button</p>
+                </div>
+            </div>
+
+            <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2;">
+                <img src="img/Picture3.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text" style="align-content:center;"><button style="background-color: #000000; text-align: center;" type="submit" class="btn btn-primary">Access as jugde</button></p>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
