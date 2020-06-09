@@ -16,7 +16,7 @@ namespace Tartarus_final.Models
         public String Password { get; set; }
         public DateTime DatumPrijave  { get; set; }
      
-        public Korisnik(int id,String ime,String prezime,String email,String lozinka,DateTime datum) : base(id, ime, prezime)
+        public Korisnik(int id, String ime, String prezime, String email, string usernmae, String lozinka, DateTime datum) : base(id, ime, prezime)
         {
             Email = email;
             Username = email;

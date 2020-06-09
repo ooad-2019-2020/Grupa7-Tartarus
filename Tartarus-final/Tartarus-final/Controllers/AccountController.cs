@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace Tartarus_final.Controllers
 {
     public class AccountController : Controller
@@ -77,8 +76,11 @@ namespace Tartarus_final.Controllers
         public async Task<IActionResult> Register(Models.RegisterViewModel model)
         {
             if (ModelState.IsValid) {
-                var user = new IdentityUser { PasswordHash = model.Password, Email = model.Email };
+                //dodati username prilikom kreiranja
+                var user = new IdentityUser {UserName = model.Username, PasswordHash = model.Password, Email = model.Email };
                 var result = await userManager.CreateAsync(user, model.Password);
+                user.UserName = model.FirstName + model.LastName;
+
 
                 if (result.Succeeded) {
                     await signInManager.SignInAsync(user, isPersistent: false);

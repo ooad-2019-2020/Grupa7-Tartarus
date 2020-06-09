@@ -13,7 +13,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tartarus_final.Models;
-using UE.Models.Authentication;
 
 namespace Tartarus_final
 {
@@ -49,7 +48,6 @@ namespace Tartarus_final
             {
                 // User settings.
                 //  options.User.RequireUniqueEmail = true;
-                
 
                 // Password settings.
                 options.Password.RequireDigit = true;

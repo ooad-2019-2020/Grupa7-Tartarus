@@ -14,7 +14,7 @@ namespace Tartarus_final.Models
         {
 
         }
-        public Cuvar(int id,String i,String p,String em,String loz,DateTime dp) : base(id,i,p,em,loz,dp)
+        public Cuvar(int id, String i, String p, String u,String em, String loz, DateTime dp) : base(id, i, p, u, em, loz, dp)
         {
 
         }
