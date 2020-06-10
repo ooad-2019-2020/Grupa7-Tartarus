@@ -27,7 +27,7 @@ namespace Tartarus_final.Controllers
             ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
             if (RegistrationTypes.Cuvar == applicationUser?.RegistrationType)
             {
-                return View("~/Views/Home/Index.cshtml");
+                return View("~/Views/Home/ErrorView.cshtml");
             }
             var obavijesti = from p in _context.Obavijest select p;
             if (!String.IsNullOrEmpty(searchString))

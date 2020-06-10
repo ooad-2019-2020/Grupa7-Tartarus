@@ -27,7 +27,7 @@ namespace Tartarus_final.Controllers
 
             if (RegistrationTypes.Cuvar != applicationUser?.RegistrationType || applicationUser?.RegistrationType == null)
             {
-                return View("~/Views/Home/Index.cshtml");
+                return View("~/Views/Home/ErrorView.cshtml");
             }
             return View();
         }

@@ -41,7 +41,7 @@ namespace Tartarus_final.Controllers
             ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
             if (RegistrationTypes.Upravnik != applicationUser?.RegistrationType || applicationUser?.RegistrationType == null)
             {
-                return View("~/Views/Home/Index.cshtml");
+                return View("~/Views/Home/ErrorView.cshtml");
             }
             if (id == null)
             {
@@ -64,7 +64,7 @@ namespace Tartarus_final.Controllers
             ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
             if (RegistrationTypes.Upravnik != applicationUser?.RegistrationType || applicationUser?.RegistrationType == null)
             {
-                return View("~/Views/Home/Index.cshtml");
+                return View("~/Views/Home/ErrorView.cshtml");
             }
             return View();
         }

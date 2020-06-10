@@ -10,7 +10,7 @@ namespace Tartarus_final.Models
     {
 
         [Required]
-        public string userName { get; set; }
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
