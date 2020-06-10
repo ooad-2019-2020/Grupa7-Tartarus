@@ -654,6 +654,10 @@ C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartar
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Home\ErrorView.cshtml.g.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Obavijest\HomeAnnouncements.cshtml.g.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Zatvorenici\HomeSearchPrisoner.cshtml.g.cs
+C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Poruka\ShowSent.cshtml.g.cs
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Poruka\ShowSent.cshtml.g.cs
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\EntityFramework.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -709,6 +713,7 @@ C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\SQ
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.CodeDom.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -716,6 +721,7 @@ C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\Sy
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
@@ -789,10 +795,11 @@ C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\ru
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.csproj.CoreCompileInputs.cache
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.MvcApplicationPartsAssemblyInfo.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Poruka\ShowSent.cshtml.g.cs

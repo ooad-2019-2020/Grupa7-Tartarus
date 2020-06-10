@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lejla\\Source\\Repos\\ooad-2019-2020\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj": {}
+    "C:\\Repo\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lejla\\Source\\Repos\\ooad-2019-2020\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj": {
+    "C:\\Repo\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lejla\\Source\\Repos\\ooad-2019-2020\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj",
+        "projectUniqueName": "C:\\Repo\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj",
         "projectName": "Tartarus-final",
-        "projectPath": "C:\\Users\\Lejla\\Source\\Repos\\ooad-2019-2020\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj",
-        "packagesPath": "C:\\Users\\Lejla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lejla\\Source\\Repos\\ooad-2019-2020\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\obj\\",
+        "projectPath": "C:\\Repo\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\Tartarus-final.csproj",
+        "packagesPath": "C:\\Users\\kerim\\.nuget\\packages\\",
+        "outputPath": "C:\\Repo\\Grupa7-Tartarus\\Tartarus-final\\Tartarus-final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lejla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kerim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.4, )"
@@ -101,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
