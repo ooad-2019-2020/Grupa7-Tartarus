@@ -2,36 +2,34 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<div class="text-center mb-lg-5">
+    <h1 class="display-5">Welcome</h1>
 </div>
 
 
-    <div class="bg">
-        <div class="content" style="align-items:center;"> 
+<div class="bg">
+    <div class="d-flex justify-content-center">
 
-            <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2;">
-                <img src="~/img/Picture2.svg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text" style="align-content:safe center;"><button style="background-color: #000000; text-align: center;" type="submit" class="btn btn-primary">Access as warden</button></p>
-                </div>
+        <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2; align-items: center;">
+            <img src="~/img/Picture2.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><button style="background-color: #000000; text-align: center;" type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Upravnik")'">Access as warden</button></p>
             </div>
-
-            <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2;">
-                <img src="img/Picture1.svg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text" style="align-content:center;"><button style="background-color: #000000; text-align: center;" type="submit"  class="btn btn-primary">Access as guard</button</p>
-                </div>
-            </div>
-
-            <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2;">
-                <img src="img/Picture3.svg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text" style="align-content:center;"><button style="background-color: #000000; text-align: center;" type="submit" class="btn btn-primary">Access as jugde</button></p>
-                </div>
-            </div>
-
         </div>
+
+        <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2; align-items: center;">
+            <img src="img/Picture1.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><button style="background-color: #000000; text-align: center;" type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Cuvar")'">Access as guard</button></p>
+            </div>
+        </div>
+
+        <div class="card ml-5" style="width: 18rem; background-color: #a3a2a2; align-items: center;">
+            <img src="img/Picture3.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><button style="background-color: #000000; text-align: center;" type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "Pravnik")'">Access as jugde</button></p>
+            </div>
+        </div>
+
     </div>
-
-
+</div>
