@@ -4,16 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Tartarus_final.Models;
 
 namespace Tartarus_final.Controllers
 {
     public class AccountController : Controller
     {
-        private  UserManager<IdentityUser> userManager;
-        private readonly SignInManager<IdentityUser> signInManager;
+        private  UserManager<ApplicationUser> userManager;
+        private readonly SignInManager<ApplicationUser> signInManager;
 
-        public AccountController(UserManager<IdentityUser> userManager,
-                                 SignInManager<IdentityUser> signInManager) 
+        public AccountController(UserManager<ApplicationUser> userManager,
+                                 SignInManager<ApplicationUser> signInManager) 
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
@@ -43,7 +44,7 @@ namespace Tartarus_final.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+                var result = await signInManager.PasswordSignInAsync(model.userName, model.Password, model.RememberMe, false);
 
                 if (result.Succeeded)
                 {
@@ -76,20 +77,56 @@ namespace Tartarus_final.Controllers
         public async Task<IActionResult> Register(Models.RegisterViewModel model)
         {
             if (ModelState.IsValid) {
-                //dodati username prilikom kreiranja
-                var user = new IdentityUser {UserName = model.Username, PasswordHash = model.Password, Email = model.Email };
-                var result = await userManager.CreateAsync(user, model.Password);
-                user.UserName = model.FirstName + model.LastName;
+                //dodati username prilikom kreiranj
+               
+  
+                if(model.Type == "Cuvar")
+                {
+                    var user = new ApplicationUser { UserName = model.Username, PasswordHash = model.Password, Email = model.Email, RegistrationType = RegistrationTypes.Cuvar };
+                    var result = await userManager.CreateAsync(user, model.Password);
+                    if (result.Succeeded)
+                    {
+                        await signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("index", "home");
+                    }
 
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+                else if(model.Type == "Upravnik")
+                {
+                    var user = new ApplicationUser { UserName = model.Username, PasswordHash = model.Password, Email = model.Email, RegistrationType = RegistrationTypes.Upravnik };
+                    var result = await userManager.CreateAsync(user, model.Password);
+                    if (result.Succeeded)
+                    {
+                        await signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("index", "home");
+                    }
 
-                if (result.Succeeded) {
-                    await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("index", "home");
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+                else if (model.Type == "Pravnik")
+                {
+                    var user = new ApplicationUser { UserName = model.Username, PasswordHash = model.Password, Email = model.Email, RegistrationType = RegistrationTypes.Pravnik };
+                    var result = await userManager.CreateAsync(user, model.Password);
+                    if (result.Succeeded)
+                    {
+                        await signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction("index", "home");
+                    }
+
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
                 }
 
-                foreach (var error in result.Errors) {
-                    ModelState.AddModelError("", error.Description);
-                }
+                
 
             }
             return View(model);

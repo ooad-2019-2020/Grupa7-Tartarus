@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,15 +13,21 @@ namespace Tartarus_final.Controllers
     public class ZatvoreniciController : Controller
     {
         private readonly NasContext _context;
-
-        public ZatvoreniciController(NasContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        public ZatvoreniciController(NasContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Zatvorenici
         public async Task<IActionResult> Index(string searchString)
         {
+            ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
+            if(RegistrationTypes.Pravnik == applicationUser?.RegistrationType)
+            {
+                return View("~/Views/Home/Index.cshtml");
+            }
             var zatvorenici = from p in _context.Zatvorenik select p;
             if (!String.IsNullOrEmpty(searchString))
             {

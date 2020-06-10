@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Tartarus_final.Migrations
 {
-    public partial class Treca : Migration
+    public partial class Tabele : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -23,6 +23,48 @@ namespace Tartarus_final.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Cuvar", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Obavijesti",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Tekst = table.Column<string>(nullable: true),
+                    ObavijestId = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Obavijesti", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Obavijesti_Obavijesti_ObavijestId",
+                        column: x => x.ObavijestId,
+                        principalTable: "Obavijesti",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Poruke",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Tekst = table.Column<string>(nullable: true),
+                    PrimalacEmail = table.Column<string>(nullable: true),
+                    posiljalacEmail = table.Column<string>(nullable: true),
+                    PorukaId = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Poruke", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Poruke_Poruke_PorukaId",
+                        column: x => x.PorukaId,
+                        principalTable: "Poruke",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -94,6 +136,16 @@ namespace Tartarus_final.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Obavijesti_ObavijestId",
+                table: "Obavijesti",
+                column: "ObavijestId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Poruke_PorukaId",
+                table: "Poruke",
+                column: "PorukaId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Prekrsaj_ZatvorenikId",
                 table: "Prekrsaj",
                 column: "ZatvorenikId");
@@ -111,6 +163,12 @@ namespace Tartarus_final.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Obavijesti");
+
+            migrationBuilder.DropTable(
+                name: "Poruke");
+
             migrationBuilder.DropTable(
                 name: "Prekrsaj");
 

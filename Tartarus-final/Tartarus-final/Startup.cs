@@ -34,12 +34,9 @@ namespace Tartarus_final
             services.AddDbContext<NasContext>(options =>
               options.UseSqlServer(
                   Configuration.GetConnectionString("DbConnection")));
-            services.AddIdentity<IdentityUser, IdentityRole>(options => {
-                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                options.User.RequireUniqueEmail = false;
-                options.SignIn.RequireConfirmedAccount = true; })
-                .AddRoles<IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDefaultIdentity<ApplicationUser>()
+         .AddEntityFrameworkStores<ApplicationDbContext>()
+         .AddDefaultTokenProviders();
             services.AddControllersWithViews();
             services.AddRazorPages();
 

@@ -10,8 +10,8 @@ using Tartarus_final.Models;
 namespace Tartarus_final.Migrations
 {
     [DbContext(typeof(NasContext))]
-    [Migration("20200606155304_uloga")]
-    partial class uloga
+    [Migration("20200610010257_Tabele")]
+    partial class Tabele
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
