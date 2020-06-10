@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,16 +13,20 @@ namespace Tartarus_final.Controllers
     public class PorukaController : Controller
     {
         private readonly NasContext _context;
-
-        public PorukaController(NasContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        public PorukaController(NasContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Poruka
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Poruka.ToListAsync());
+            ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
+            var poruke = from p in _context.Poruka select p;
+            poruke = poruke.Where(p => p.PrimalacEmail.Equals(applicationUser.Email));
+            return View(await poruke.ToListAsync());
         }
 
         // GET: Poruka/Details/5
