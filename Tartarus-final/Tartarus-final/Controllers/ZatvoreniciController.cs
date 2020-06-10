@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Tartarus_final.Models;
 
@@ -169,6 +168,23 @@ namespace Tartarus_final.Controllers
         private bool ZatvorenikExists(int id)
         {
             return _context.Zatvorenik.Any(e => e.Id == id);
+        }
+
+       
+
+        public async Task<IActionResult> HomeSearchPrisoner(string searchString)
+        {
+            ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
+            if (RegistrationTypes.Pravnik == applicationUser?.RegistrationType)
+            {
+                return View("~/Views/Home/Index.cshtml");
+            }
+            var zatvorenici = from p in _context.Zatvorenik select p;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                zatvorenici = zatvorenici.Where(p => p.Ime.Contains(searchString));
+            }
+            return View(await zatvorenici.ToListAsync());
         }
     }
 }
