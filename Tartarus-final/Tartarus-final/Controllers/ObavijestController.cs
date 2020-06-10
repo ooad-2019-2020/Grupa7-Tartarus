@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,15 +13,37 @@ namespace Tartarus_final.Controllers
     public class ObavijestController : Controller
     {
         private readonly NasContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
         
-        public ObavijestController(NasContext context)
+        public ObavijestController(NasContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Obavijest
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
+            if (RegistrationTypes.Pravnik == applicationUser?.RegistrationType || RegistrationTypes.Cuvar == applicationUser?.RegistrationType)
+            {
+                return View("~/Views/Home/Index.cshtml");
+            }
+            var obavijesti = from p in _context.Obavijest select p;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                obavijesti = obavijesti.Where(p => p.Tekst.Contains(searchString));
+            }
+            return View(await _context.Obavijest.ToListAsync());
+        }
+
+        public async Task<IActionResult> HomeAnnouncements(string searchString)
+        {
+            var obavijesti = from p in _context.Obavijest select p;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                obavijesti = obavijesti.Where(p => p.Tekst.Contains(searchString));
+            }
             return View(await _context.Obavijest.ToListAsync());
         }
 
