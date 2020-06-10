@@ -23,10 +23,10 @@ namespace Tartarus_final.Controllers
         public async Task<IActionResult> Index(string searchString)
         {
             ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
-            if(RegistrationTypes.Pravnik == applicationUser?.RegistrationType)
-            {
-                return View("~/Views/Home/Index.cshtml");
-            }
+ //           if(RegistrationTypes.Pravnik == applicationUser?.RegistrationType)
+ //           {
+ //              return View("~/Views/Home/Index.cshtml");
+ //           }
             var zatvorenici = from p in _context.Zatvorenik select p;
             if (!String.IsNullOrEmpty(searchString))
             {

@@ -25,7 +25,7 @@ namespace Tartarus_final.Controllers
         public async Task<IActionResult> Index(string searchString)
         {
             ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
-            if (RegistrationTypes.Pravnik == applicationUser?.RegistrationType || RegistrationTypes.Cuvar == applicationUser?.RegistrationType)
+            if (RegistrationTypes.Cuvar == applicationUser?.RegistrationType)
             {
                 return View("~/Views/Home/Index.cshtml");
             }
