@@ -39,6 +39,11 @@ namespace Tartarus_final.Controllers
         // GET: Zatvorenici/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
+            if (RegistrationTypes.Upravnik != applicationUser?.RegistrationType || applicationUser?.RegistrationType == null)
+            {
+                return View("~/Views/Home/Index.cshtml");
+            }
             if (id == null)
             {
                 return NotFound();
@@ -55,8 +60,13 @@ namespace Tartarus_final.Controllers
         }
 
         // GET: Zatvorenici/Create
-        public IActionResult Create()
+        public async Task<IActionResult> CreateAsync()
         {
+            ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
+            if (RegistrationTypes.Upravnik != applicationUser?.RegistrationType || applicationUser?.RegistrationType == null)
+            {
+                return View("~/Views/Home/Index.cshtml");
+            }
             return View();
         }
 
