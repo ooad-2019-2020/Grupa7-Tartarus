@@ -34,17 +34,17 @@ namespace Tartarus_final.Controllers
             {
                 obavijesti = obavijesti.Where(p => p.Tekst.Contains(searchString));
             }
-            return View(await _context.Obavijest.ToListAsync());
+            return View(await obavijesti.ToListAsync());
         }
 
-        public async Task<IActionResult> HomeAnnouncements(string searchString)
+    public async Task<IActionResult> HomeAnnouncements(string searchString)
         {
             var obavijesti = from p in _context.Obavijest select p;
             if (!String.IsNullOrEmpty(searchString))
             {
                 obavijesti = obavijesti.Where(p => p.Tekst.Contains(searchString));
             }
-            return View(await _context.Obavijest.ToListAsync());
+            return View(await obavijesti.ToListAsync());
         }
 
         // GET: Obavijest/Details/5

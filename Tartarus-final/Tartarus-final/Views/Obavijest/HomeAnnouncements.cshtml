@@ -9,12 +9,11 @@
 
 <div class=" mb-lg-3"></div>
 
-    <!--Dont spam divs(Look up semantic code)-->
-    <form asp-action="PretražiZatvorenike" method="post">
-        <input type="text" name="searchNames" style="border-radius: 50px;  width: 80%; border-color: #d1d0d0;" />
-        <input type="submit" value="Search" style="border-radius: 50px; border: none;" />
-    </form>
-
+<!--Dont spam divs(Look up semantic code)-->
+<form  asp-controller="Obavijest" asp-action="HomeAnnouncements">
+    <input type="text" name="searchNames" style="border-radius: 50px;  width: 80%; border-color: #d1d0d0;" />
+    <input type="submit" value="Search" style="border-radius: 50px; border: none;" />
+</form>
 
 <div class=" mb-lg-5"></div>
 <div class="d-flex justify-content-center">
@@ -30,12 +29,12 @@
         <tbody>
             @foreach (var item in Model)
             {
-            <tr>
-                <td style="text-align: center; background-color: #ffffff;">
-                    @Html.DisplayFor(modelItem => item.Tekst)
-                </td>
+                <tr>
+                    <td style="text-align: center; background-color: #ffffff;">
+                        @Html.DisplayFor(modelItem => item.Tekst)
+                    </td>
 
-            </tr>
+                </tr>
             }
         </tbody>
     </table>
