@@ -2,38 +2,47 @@
 
 @{
     ViewData["Title"] = "Search prisoners";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h1>Index</h1>
 
-<p>
+<p style="font-size:large">
     <a asp-action="Create">Create New</a>
 </p>
 
 
-<form asp-controller="Zatvorenici" asp-action="Index">
-    <p>
-        Ime: <input type="text" name="SearchString">
-        <input type="submit" value="Filter" />
-    </p>
-</form>
+<h1>Search prisoners</h1>
 
-<table class="table">
+<div class=" mb-lg-3"></div>
+
+<div class="d-flex justify-content-center">
+    <form asp-controller="Zatvorenici" asp-action="Index">
+        <p style="font-size:large; align-items:center;">
+            Enter prisoner name: <input type="text" name="SearchString" style="border-radius: 50px;  width: 80%; border: none;" />
+            <input type="submit" value="Filter" style="border-radius: 50px; border: none;" />
+        </p>
+    </form>
+</div>
+
+<div class=" mb-lg-5"></div>
+
+<table class="table  mb-lg-5">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Ime)
+            <th style="text-align: center; background-color: #ffffff;">
+                First name
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Prezime)
+            <th style="text-align: center; background-color: #ffffff;">
+                Last name
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ZatvorskaKazna)
+            <th style="text-align: center; background-color: #ffffff;">
+                Prison sentence
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Evaluacija)
+            <th style="text-align: center; background-color: #ffffff;">
+                Prisoner evaluation
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Jmbg)
+            <th style="text-align: center; background-color: #ffffff;">
+                Jmbg
             </th>
             <th></th>
         </tr>
@@ -41,28 +50,29 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Prezime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ZatvorskaKazna)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Evaluacija)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Jmbg)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+            <tr>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Ime)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Prezime)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.ZatvorskaKazna)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Evaluacija)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Jmbg)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>
+

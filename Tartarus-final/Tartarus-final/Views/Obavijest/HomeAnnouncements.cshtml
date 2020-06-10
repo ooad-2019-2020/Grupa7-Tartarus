@@ -9,8 +9,6 @@
 
 <div class=" mb-lg-3"></div>
 
-
-
     <!--Dont spam divs(Look up semantic code)-->
     <form asp-action="PretražiZatvorenike" method="post">
         <input type="text" name="searchNames" style="border-radius: 50px;  width: 80%; border-color: #d1d0d0;" />
@@ -32,11 +30,12 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td style="text-align: center; background-color: #ffffff;">
-                        @Html.DisplayFor(modelItem => item.Tekst)
-                    </td>
-                </tr>
+            <tr>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Tekst)
+                </td>
+
+            </tr>
             }
         </tbody>
     </table>

@@ -44,25 +44,23 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    <td style="text-align: center; background-color: #ffffff;">
-                        @Html.DisplayFor(modelItem => item.Ime)
-                    </td>
-                    <td style="text-align: center; background-color: #ffffff;">
-                        @Html.DisplayFor(modelItem => item.Prezime)
-                    </td>
-                    <td style="text-align: center; background-color: #ffffff;">
-                        @Html.DisplayFor(modelItem => item.ZatvorskaKazna)
-                    </td>
-                    <td style="text-align: center; background-color: #ffffff;">
-                        @Html.DisplayFor(modelItem => item.Evaluacija)
-                    </td>
-                    <td style="text-align: center; background-color: #ffffff;">
-                        @Html.DisplayFor(modelItem => item.Jmbg)
-                    </td>
-
-
-                </tr>
+            <tr>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Ime)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Prezime)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.ZatvorskaKazna)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Evaluacija)
+                </td>
+                <td style="text-align: center; background-color: #ffffff;">
+                    @Html.DisplayFor(modelItem => item.Jmbg)
+                </td>
+            </tr>
             }
         </tbody>
     </table>
