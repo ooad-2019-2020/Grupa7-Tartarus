@@ -29,6 +29,14 @@ namespace Tartarus_final.Controllers
             return View(await poruke.ToListAsync());
         }
 
+        public async Task<IActionResult> ShowSent()
+        {
+            ApplicationUser applicationUser = await _userManager.GetUserAsync(User);
+            var poruke = from p in _context.Poruka select p;
+            poruke = poruke.Where(p => p.posiljalacEmail.Equals(applicationUser.Email));
+            return View(await poruke.ToListAsync());
+        }
+
         // GET: Poruka/Details/5
         public async Task<IActionResult> Details(int? id)
         {

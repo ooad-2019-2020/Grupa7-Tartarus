@@ -795,3 +795,4 @@ C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\bin\Debug\netcoreapp3.1\ru
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.csproj.CoreCompileInputs.cache
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.MvcApplicationPartsAssemblyInfo.cs
 C:\Repo\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Tartarus-final.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lejla\Source\Repos\ooad-2019-2020\Grupa7-Tartarus\Tartarus-final\Tartarus-final\obj\Debug\netcoreapp3.1\Razor\Views\Poruka\ShowSent.cshtml.g.cs

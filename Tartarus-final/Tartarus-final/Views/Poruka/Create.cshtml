@@ -13,17 +13,17 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Tekst" class="control-label"></label>
+                <label asp-for="Tekst" title="Text" class="control-label"></label>
                 <input asp-for="Tekst" class="form-control" />
                 <span asp-validation-for="Tekst" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PrimalacEmail" class="control-label"></label>
+                <label asp-for="PrimalacEmail" title="Receiver" class="control-label"></label>
                 <input asp-for="PrimalacEmail" class="form-control" />
                 <span asp-validation-for="PrimalacEmail" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="posiljalacEmail" class="control-label"></label>
+                <label asp-for="posiljalacEmail" title="Sender" class="control-label"></label>
                 <input asp-for="posiljalacEmail" class="form-control" />
                 <span asp-validation-for="posiljalacEmail" class="text-danger"></span>
             </div>
